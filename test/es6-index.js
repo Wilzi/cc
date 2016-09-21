@@ -1,5 +1,5 @@
-require('babel/register');
-require("babel/polyfill");
+require('babel-core/register');
+require("babel-polyfill");
 var cc = require("./../src/index.js");
 
 module.exports = {

@@ -1,6 +1,6 @@
-require('babel/register');
-require("babel/polyfill");
-import _ from "underscore";
+require('babel-core/register');
+require("babel-polyfill");
+const _ = require("underscore");
 
 const countryData = require('./../util/country-data');
 
@@ -12,7 +12,7 @@ function find(opts) {
     }
 }
 
-export default {
+module.exports = {
     find: find,
     countries: countryData
 };
